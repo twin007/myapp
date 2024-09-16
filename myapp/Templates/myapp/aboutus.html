@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    {% include 'myapp/navbar.html' %}
+    <div class="container">
+        <h1 class="alert alert-success mt-2 px-2 text-center">About Us</h1>
+        <div  class="row">
+            <div class="col-md-6">
+                <p> At <b style="color: goldenrod; font-size:x-large; font-family:'Dancing Script';">PackGreen</b>, we believe that every product we package is a step towards a greener future. Founded with the vision to minimize the environmental footprint, we are dedicated to providing eco-friendly, sustainable packaging solutions that cater to businesses of all sizes.
+
+                    Our journey began with a simple idea: to replace conventional, wasteful packaging materials with innovative, biodegradable, and recyclable alternatives that protect both your products and the planet. Today, we are proud to offer a diverse range of packaging options that include compostable mailers, recyclable boxes, reusable bags, and eco-conscious fillers, all designed to reduce waste and promote circularity.
+                    
+                    We are committed to sustainability at every stage, from sourcing ethically produced raw materials to ensuring that our manufacturing processes leave the smallest possible carbon footprint. We work closely with suppliers who share our passion for environmental responsibility and continuously invest in research to bring you cutting-edge packaging solutions.
+                    
+                    Whether you are an eco-conscious business or simply looking for greener alternatives, we aim to make sustainable packaging accessible, affordable, and effective. Together, we can redefine packaging and contribute to a more sustainable future.<br><br>
+                </p>    
+                <h5 style="color: green;">Our Mission<br></h5>
+                <p>To lead the shift towards sustainable packaging by offering products that are innovative, eco-friendly, and accessible for all.<br><br></p>
+                    
+                <h5 style="color:green">Our Vision<br></h5>
+                <p>A world where packaging waste is a thing of the past, and every package protects both the product and the environment.<br><br></p>
+                    
+                <h5>Thank you for joining us on this journey towards a sustainable future, one package at a time.</h5>
+            </div>
+            <div class="col-md-6">
+                <img src="{%  static 'myapp/about.jpeg' %}" class="d-block w-100" alt="Green Life Green Kite" style = "object-fit: cover; height: 500px;">
+            </div>
+        </div>
+    </div>
+    {% include 'myapp/footer.html' %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
+</body>
+</html>
